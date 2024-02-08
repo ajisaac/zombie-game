@@ -2,7 +2,6 @@ buildscript {
     
 
     repositories {
-        mavenLocal()
         mavenCentral()
         gradlePluginPortal()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
@@ -29,7 +28,6 @@ allprojects {
     }
 
     repositories {
-        mavenLocal()
         mavenCentral()
         google()
         gradlePluginPortal()
@@ -49,7 +47,8 @@ project(":desktop") {
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion"
         api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-        
+        api "com.badlogicgames.gdx:gdx-lwjgl3-glfw-awt-macos:$gdxVersion"
+
     }
 }
 
